@@ -1,0 +1,47 @@
+/* VARIABLES */
+:root {
+    --primary_font  : 'Poppins', sans-serif;
+    --dark1         : #1c252c;
+    --dark2         : #2e2e44;
+    --dark3         : #2d2f41;
+    --dark4         : #111827;
+    --pink          : #ec4899;
+    --purple        : #8b5cf6;
+    --gray          : #6b7280;
+    --completed     : greenyellow;
+    --pending       : lightsalmon;
+    --expired       : red;
+    --shade         : rgba(14, 21, 37, 1);
+}
+
+
+/* GLOBALES */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--primary_font);
+    font-size: 1.6rem;
+    background-color: var(--dark2);
+    color: #eee;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* UTILIDADES */
+.line-through {
+    text-decoration: line-through;
+}
+
+/* BLOQUE HEADER */
