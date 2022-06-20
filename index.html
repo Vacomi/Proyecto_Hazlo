@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP DE TAREAS - MICHAEL</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/page2.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+
+            <!-- BLOQUE CLOCK -->
+            <div class="clock">
+                <div class="clock__container">
+                    <span id="dayname" class="dayname">Dia</span>
+                    <span id="daynumber">00</span>
+                    <span id="month">mes</span>
+                    <span id="year">año</span>
+                </div>
+            </div>
+    
+            <!-- BLOQUE TITLE -->
+            <h1 class="title">App de Tareas Pendientes</h1>
+    
+            <!-- BLOQUE FORM -->
+            <form action="#" id="formulario" class="form">
+                <div class="form__entradas">
+                    <input
+                    id          = "tareainput"
+                    class       = "form__task"
+                    type        = "text" 
+                    placeholder = "Cúales son tus planes?..."
+                    autocomplete="off">
+    
+                    <input type="date" id="form__calendar" class="form__calendar">
+                </div>
+                <div class="form__botonera">
+                    <input 
+                    id      = "botonagregar"
+                    class   = "form__button"
+                    type    = "submit"
+                    value   = "Agregar Tarea"
+                    > 
+                </div>
+            </form>
+    
+        </header>
+        
+        <section>
+            <table class="table">
+                <caption class="table__Title">Tareas: 0</caption>
+                <thead class="table__header">
+                    <tr class="table__row">
+                        <th class="table__th">seleccionar</th>
+                        <th class="table__th">Tarea</th>
+                        <th class="table__th">Estado</th>
+                        <th class="table__th">Fecha</th>
+                        <th class="table__th">Editar</th>
+                        <th class="table__th">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body">
+                    <tr class="table__row">
+                        <td class="table__celda">
+                            <i class="material-icons table__seleccion">check_box_outline_blank</i>
+                        </td>
+                        <td class="table__celda">
+                            <input class="table__tarea" type="text" value="Terminar este Proyecto" readonly>
+                        </td>
+                        <td>
+                            <span class="table__estado">Pendiente</span>
+                        </td>
+                        <td>
+                            <input class="table__fecha" type="date" value="2022-05-15" readonly>
+                        </td>
+                        <td>
+                            <i class="material-icons table__editar">edit</i>
+                        </td>
+                        <td>
+                            <i class="material-icons table__eliminar">delete</i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
